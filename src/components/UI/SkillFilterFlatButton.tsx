@@ -4,15 +4,15 @@ import { hasFilter } from "../../utils/SkillUtils.ts";
 import { motion } from "framer-motion";
 import { FaMobile } from "react-icons/fa6";
 import { IoLogoGameControllerB } from "react-icons/io";
-import { IoDesktop } from "react-icons/io5";
+import { IoDesktop, IoServer } from "react-icons/io5";
 import { twMerge } from "tailwind-merge";
 
-const types: SkillType[] = ["web", "mobile", "game"];
+const types: SkillType[] = ["web", "mobile", "backend"];
 
 const icons: { [key in SkillType]: JSX.Element } = {
     web: <IoDesktop />,
     mobile: <FaMobile />,
-    game: <IoLogoGameControllerB />,
+    backend: <IoServer />,
 };
 
 const ringColors = ["ring-indigo-500", "ring-cyan-500", "ring-fuchsia-500"];
