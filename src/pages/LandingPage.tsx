@@ -10,6 +10,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import FragmentBelowHero from "../components/layout/fragments/FragmentBelowHero.tsx";
 import LandingPageSection from "../components/layout/sections/LandingPageSection.tsx";
 import SectionAbout from "../components/layout/sections/SectionAbout.tsx";
+import SectionExperiences from "../components/layout/sections/SectionExperiences.tsx";
 import SectionContacts from "../components/layout/sections/SectionContacts.tsx";
 import SectionHeroOverlay from "../components/layout/sections/SectionHeroOverlay.tsx";
 import SectionProjects from "../components/layout/sections/SectionProjects.tsx";
@@ -42,6 +43,7 @@ function LandingPage() {
     const projectsRef = useRef(null!);
     const aboutRef = useRef(null!);
     const skillsRef = useRef(null!);
+    const experiencesRef = useRef(null!);
     const contactRef = useRef(null!);
 
     const sections: SectionData[] = [
@@ -64,6 +66,11 @@ function LandingPage() {
             tag: "skills",
             ref: skillsRef,
             jsx: <SectionSkills />,
+        },
+        {
+            tag: "experiences",
+            ref: experiencesRef,
+            jsx: <SectionExperiences />,
         },
         {
             tag: "contact",

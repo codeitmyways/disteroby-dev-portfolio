@@ -2,12 +2,12 @@
  * Represents a tag for a project.
  */
 export type ProjectTag =
-    | "motivapp"
-    | "slide-run"
-    | "mind-blooming"
-    | "unimiibo"
-    | "code-hunter"
-    | "undertale-3d";
+    | "link"
+    | "xelion"
+    | "blumtelehealth"
+    | "talkroom"
+    | "biztalk.online"
+    | "biztalkmobile";
 
 /**
  * Represents the type of call-to-action (CTA).
@@ -70,145 +70,151 @@ export type ProjectData = {
  */
 export const PROJECTS: ProjectData[] = [
     {
-        refName: "motivapp",
-        title: "MotivApp",
-        isTeam: false,
+        refName: "link",
+        title: "LINK",
+        isTeam: true,
         description: [
-            "Introducing MotivApp, a project that revolutionizes personal development!",
-            "MotivApp stands as a testament to innovation, designed to empower individuals in their journey towards self-improvement. It serves as a comprehensive application aimed at helping users stay committed to their goals and aspirations.",
-            "Whether it's quitting smoking, enhancing academic performance, hitting the gym regularly, saving money, or managing weight, MotivApp offers a diverse array of tools tailored to meet diverse needs. It embodies a fusion of technology and motivation, providing users with the support they need to turn aspirations into achievements.",
-            "Available on the Android Play Store, MotivApp has garnered widespread acclaim, marked by an array of positive reviews and testimonials. With its intuitive interface and robust feature set, MotivApp emerges as a reliable companion on the path to personal growth and success. Experience the power of motivation at your fingertips with MotivApp.",
+            "The super communication app for Rakuten Mobile (Rakuten SAIKYO Plan) subscribers! Enjoy unlimited calling, access a host of Rakuten services and earn Points!",
+            "Calls: Rakuten Mobile subscribers can make unlimited calls and send Link message to Rakuten Link users, as well as to other mobile networks and landline numbers in Japan and in 66 designated countries and regions through Rakuten Link. Calls to mobile phones and landlines including other carriers in Japan are free when calling to a Japanese number (some numbers not included).",
+            "Messages: You can create chat groups with other Rakuten Link users for up to 100 people, and share photos, videos, and documents, as well as messages.",
+            "Home：As a Rakuten Mobile user, you can now enjoy easier, one-stop access to not only your favorite services in Rakuten Link but also exclusive deals across Rakuten Group services! Call, message, earn points by using the Rakuten Link's Super Point Screen and Missions, access key Rakuten Group services and do much more - all from one screen!",
         ],
-        tags: ["android", "first-project"],
+        tags: ["iOS", "Recent","WebRTC"],
         cta: [
             {
-                text: "Go to Play Store",
+                text: "Go to Appstore Store",
                 type: "store",
-                href: "https://play.google.com/store/apps/details?id=distefano.roberto.motivapp",
-            },
-            {
-                text: "Promotional Video",
-                type: "video",
-                href: "https://www.youtube.com/watch?v=iI5p9j6cgUk",
-            },
+                href: "https://apps.apple.com/us/app/rakuten-link/id1498877539",
+            }
         ],
         device: {
             type: "smartphone",
             deviceOrientation: "portrait",
-            textureCount: 3,
-            texture: "texture_motivapp.jpg",
+            textureCount: 4,
+            texture: "link.png",
         },
     },
     {
-        refName: "slide-run",
-        title: "Slide Run",
-        isTeam: false,
+        refName: "xelion",
+        title: "Xelion",
+        isTeam: true,
         description: [
-            "Introducing Slide Run, the ultimate arcade adventure for your smartphone. Embark on an endless race where the goal is to navigate through a labyrinth of walls with lightning-fast reflexes.",
-            "Engage in exhilarating competition with friends and rivals worldwide through the online leaderboard. See who reigns supreme, dominating the global ranks with unparalleled skill and precision.",
-            "With over 15 captivating skins available, Slide Run offers customization options to personalize your marble. From sleek classics to rare finds, each skin is meticulously crafted to suit your style. Collect coins as you dash through the game to unlock a treasure trove of skins, elevating your marble to legendary status.",
-            "Are you ready to seize the legendary marble and conquer the labyrinth? Slide into action and test your mettle with Slide Run!",
+            "Good communication is the lifeline of modern businesses. Xelion believes that by giving customers a simple to use platform that is accessible anywhere, anytime and on any device, they can not only improve communications within their business, but also organise communications across multiple technologies into one central platform.",
+            "With an extensive suite of features, Xelion includes all functionality out of the box. No bolt-ons and no upgrade fees, everything is included for a simple monthly fee per user.",
+            "Integration with the desktop, mobiles, calendars and much more come as standard with Xelion and enable users to work where and how they want.​",
         ],
-        tags: ["unity", "arcade-game"],
+        tags: ["Communication", "iOS","WebRTC","MediaSoup"],
         cta: [
             {
-                text: "Gameplay Video",
-                type: "video",
-                href: "https://youtu.be/yORUsGCqQpw",
-            },
+                text: "Go to Appstore Store",
+                type: "store",
+                href: "https://apps.apple.com/us/app/xelion-8/id1584635039",
+            }
         ],
         device: {
             type: "smartphone",
-            deviceOrientation: "landscape",
-            textureCount: 3,
-            texture: "texture_slide-run.jpg",
+            deviceOrientation: "portrait",
+            textureCount: 2,
+            texture: "xelion.png",
         },
     },
     {
-        refName: "mind-blooming",
-        title: "Mind Blooming",
-        isTeam: false,
+        refName: "blumtelehealth",
+        title: "Blum Telehealth",
+        isTeam: true,
         description: [
-            "Enter the realm of mental wellness with Mind Blooming,  an innovative initiative from the University of Milano-Bicocca's Psychology and Computer Science departments, aims to democratize access to psychological support",
-            "Mind Blooming heralds a new era in mental health care by offering remote pathways for the treatment of various psychological disorders. Designed to combat afflictions such as anxiety, depression, burnout, psychosomatic disorders, sleep disturbances, and self-destructive thoughts, the application serves as a beacon of hope for those in need.",
-            "Upon launch, users begin with a thorough questionnaire to identify prevalent psychological disorders. Week by week, Mind Blooming provides personalized lessons and exercises to empower users in reclaiming mental well-being.",
-            "This visionary project, the focus of my bachelor thesis, exemplifies the intersection of psychology and technology, reshaping the landscape of mental health care for generations to come.",
+            "Telehealth means doctor and patient talk to each other over a smartphone, computer or other device. For people living in remote areas, it’s often the only way they can consult a doctor without a long commute.  Telehealth is approved by the American Medical Association and many states have regulations requiring insurance companies to cover these \“office visits.\”",
+            "Our Blum app lets you easily connect with your doctor via phone, computer or device with just a few taps. With Blum, You’re always in touch with your family’s health care.",
+            "We Provide you healthier relationships with the physicians. pharmacists, therapists and other providers you’re already seeing.",
         ],
-        tags: ["flutter", "university-project", "bachelor-thesis"],
+        tags: ["Communication", "iOS","WebRTC", "Telehealth"],
+        cta: [
+            {
+                text: "Go to Appstore Store",
+                type: "store",
+                href: "https://apps.apple.com/us/app/blum-telehealth/id1273081019",
+            }
+        ],
         device: {
             type: "smartphone",
             deviceOrientation: "portrait",
             textureCount: 3,
-            texture: "texture_mind-blooming.jpg",
+            texture: "blum.jpeg",
         },
     },
     {
-        refName: "unimiibo",
-        title: "Unimiibo",
-        isTeam: false,
+        refName: "biztalk.online",
+        title: "Biztalk",
+        isTeam: true,
         description: [
-            "Welcome to Unimiibo, your ultimate destination for discovering Nintendo's expansive collection of character figurines, known as Amiibo. These statuettes represent not only characters from Nintendo's iconic video games but also a variety of other franchises. Each figurine comes equipped with special NFC tags that unlock exclusive in-game bonuses when activated near Nintendo consoles.",
-            'Derived from the fusion of "Unimib" - the abbreviation for the University of Milano-Bicocca - and "Amiibo", Unimiibo represents a harmonious blend of academia and gaming culture. Dive into a treasure trove of iconic characters and discover the magic of Amiibo through my user-friendly platform.',
-            "Unimiibo goes beyond mere cataloging; it embodies transparency and accessibility. As an open-source project, its codebase is readily available on my GitHub profile. Explore the intersection of innovation and accessibility with me, only at Unimiibo!",
+            "RTC Web was founded with a vision of employing communication technologies to build a new wave of solutions with an engaging personalized experience. We work to develop reliable and robust RTC applications for both mobile and the web across several industry verticals.",
+            "Our team brings along proven abilities in building futuristic and creative solutions to make your business agile. We have a team of experts with several years of experience in designing & developing reliable and robust applications for varying screen sizes.",
+            "RTCWeb knows exactly how WebRTC can help you craft beautiful, user-centric products quickly and cost-effectively. We add live video, voice audios & messaging to your websites and mobile apps, but believe in a simple framework. RTCWeb holds potential for businesses to pay off far beyond projections and lead where you’ve never gone before.",
         ],
-        tags: ["react", "university-project"],
+        tags: ["Communication", "node","WebRTC"],
         cta: [
             {
                 text: "Visit the WebSite",
                 type: "product",
-                href: "https://disteroby.github.io/unimiibo/",
-            },
-            {
-                text: "See the Source Code",
-                type: "repository",
-                href: "https://github.com/disteroby/unimiibo",
-            },
+                href: "https://biztalk.online/",
+            }
         ],
         device: {
             type: "laptop",
             textureCount: 3,
-            texture: "texture_unimiibo.jpg",
+            texture: "biztalk-Desktop.png",
         },
     },
     {
-        refName: "code-hunter",
-        title: "Code:Hunter",
-        isTeam: true,
-        description: [
-            "Enter Code:Hunter, your go-to web platform for tackling an array of coding challenges.",
-            "Inspired by services like LeetCode, this platform equips developers with the tools to prepare for even the most demanding tech interviews, featuring a curated collection of challenges drawn directly from interviews at top tech companies, including FAANG.",
-            "Code:Hunter is more than just a ordinary project; it's a collaborative academic endeavor taken on by a group of students. Designed to foster teamwork and proficiency in handling complex projects, we adhere to agile methodologies, particularly Scrum, while also prioritizing Test-Driven Development and DevOps practices.",
-            "With Code:Hunter, developers gain invaluable experience in navigating real-world coding scenarios, honing their skills, and mastering the art of problem-solving. Join us on this journey of growth and learning, where challenges become opportunities and teamwork reigns supreme.",
-        ],
-        tags: ["react", "spring-boot", "university-project"],
-        device: {
-            type: "laptop",
-            textureCount: 3,
-            texture: "texture_codehunter.jpg",
-        },
-    },
-    {
-        refName: "undertale-3d",
-        title: "Undertale 3D",
+        refName: "talkroom",
+        title: "Talkroom",
         isTeam: false,
         description: [
-            "Undertale 3D is a video game prototype aimed at recreating the beloved battles we've come to cherish in Undertale, the game born from the brilliant mind of Toby Fox and hailed as a massive success worldwide.",
-            "Departing from the 'pixel-art' style of the original product and leveraging the full potential of Unreal Engine 5, this prototype faithfully recreates one of the most iconic battles: the showdown against Undine The Undying.",
-            "Set to the magnificent OST 'Battle against a true hero', confront Undyne in a battle of wits and skill. Will you emerge victorious?",
-            "With Undertale 3D, the excitement and intensity of battles come to life in a whole new dimension, offering players an immersive and thrilling experience. Prepare to challenge fate and discover if you have the courage and determination to prevail.",
+            "Perform live video call while chatting with your friends, relatives and business contacts! You just need to create a room by giving room name send the link via any medium like SMS, WhatsApp, and Email.",
+            "When another person will join room with same room name or click join link you will be able to talk and see him.",
+            "Application is kept simple and you don't need to do registration, to start using it.",
+            "Video Call - Don't limit yourself to just hear, why not see your family, friends, and contacts.",
+            "Web - TalkRoom.io can be used on Desktop, Laptop, Other handheld devices with a WebRTC-enabled browser (Chrome, Firefox, Opera).",
+            "Simple - Easy steps to start calling, no registration required.",
+            "To begin a call enter a room name and hit the Start Button.",
         ],
-        tags: ["unreal-engine-5"],
+        tags: ["Communication", "iOS","WebRTC","MediaSoup"],
         cta: [
             {
-                text: "Gameplay Video",
-                type: "video",
-                href: "https://www.youtube.com/watch?v=noz2mGBLV-4",
-            },
+                text: "Go to Appstore Store",
+                type: "store",
+                href: "https://apps.apple.com/us/app/talkroom-io/id1471326235",
+            }
         ],
         device: {
-            type: "laptop",
-            textureCount: 3,
-            texture: "texture_undertale3d.jpg",
+            type: "smartphone",
+            deviceOrientation: "portrait",
+            textureCount: 2,
+            texture: "talkroom.png",
+        },
+    },
+    {
+        refName: "biztalkmobile",
+        title: "Biztalk Mobile App",
+        isTeam: true,
+        description: [
+            "Biztalk.online is a free chatting and video-conferencing platform based on WebRTC Mesh topology. This platform supports file sharing too. It required to signup for creating an account. In this platform, a non-registered user can also join a call through invitation links.",
+            "Our team brings along proven abilities in building futuristic and creative solutions to make your business agile. We have a team of experts with several years of experience in designing & developing reliable and robust applications for varying screen sizes.",
+            "RTCWeb knows exactly how WebRTC can help you craft beautiful, user-centric products quickly and cost-effectively. We add live video, voice audios & messaging to your websites and mobile apps, but believe in a simple framework. RTCWeb holds potential for businesses to pay off far beyond projections and lead where you’ve never gone before.",
+        ],
+        tags: ["Communication", "iOS","WebRTC","MediaSoup"],
+        cta: [
+            {
+                text: "Go to Appstore Store",
+                type: "store",
+                href: "https://apps.apple.com/us/app/biztalk-online/id1337026080",
+            }
+        ],
+        device: {
+            type: "smartphone",
+            deviceOrientation: "portrait",
+            textureCount: 2,
+            texture: "biztalk.png",
         },
     },
 ];

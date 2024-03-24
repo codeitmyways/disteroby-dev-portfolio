@@ -34,7 +34,7 @@ export default function SectionHeroOverlay({ pageIsLoaded }: SectionHeroProps) {
                 variants={variants}
                 custom={0.5}>
                 <MutableText
-                    words={["web", "mobile", "game"]}
+                    words={["Mobile", "WebRTC","Web"]}
                     time={4000}
                     pause={!pageIsLoaded}
                     renderItem={word => <GlowingText text={word} />}
@@ -56,7 +56,7 @@ export default function SectionHeroOverlay({ pageIsLoaded }: SectionHeroProps) {
                 <div className='flex max-w-xl grow flex-row items-center justify-center opacity-75 md:px-16'>
                     <div className='pointer-events-none h-[0.06rem] grow bg-gradient-to-l from-white/70 ' />
                     <div className='text-md grow-0 px-2 font-light capitalize text-white/80 md:px-4 md:text-xl'>
-                        Roberto Di Stefano
+                        Sumit Meena
                     </div>
                     <div className='pointer-events-none h-[0.06rem] grow bg-gradient-to-r from-white/70 ' />
                 </div>

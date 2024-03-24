@@ -10,6 +10,8 @@ export const MODEL_DIR = "./models/";
  */
 export const TEXTURE_DIR = "./textures/";
 
+export const LOGO_DIR = "./companies/";
+
 /**
  * Generates the path for the specified 3D model type.
  * @param modelType The type of device model.
@@ -26,4 +28,8 @@ export function modelPath(modelType: DeviceType): string {
  */
 export function texturePath(textureName: string): string {
     return `${TEXTURE_DIR}${textureName}`;
+}
+
+export function logoPath(textureName: string): string {
+    return `${LOGO_DIR}${textureName}`;
 }

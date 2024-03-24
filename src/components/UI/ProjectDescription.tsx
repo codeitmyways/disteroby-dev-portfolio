@@ -1,6 +1,6 @@
 import { CtaType, ProjectData } from "../../constants/ProjectsData.ts";
 import { motion } from "framer-motion";
-import { FaGithub, FaGlobe, FaGooglePlay, FaYoutube } from "react-icons/fa6";
+import { FaAppStore, FaAppStoreIos, FaGithub, FaGlobe, FaGooglePlay, FaYoutube } from "react-icons/fa6";
 import { HiUser, HiUserGroup } from "react-icons/hi2";
 import { twJoin } from "tailwind-merge";
 
@@ -60,7 +60,7 @@ export default function ProjectDescription({
                 case "product":
                     return <FaGlobe />;
                 case "store":
-                    return <FaGooglePlay />;
+                    return <FaAppStoreIos />;
                 case "video":
                     return <FaYoutube />;
                 case "repository":

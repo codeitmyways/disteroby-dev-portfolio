@@ -4,6 +4,7 @@ import {
     HiCodeBracketSquare,
     HiOutlineCodeBracketSquare,
 } from "react-icons/hi2";
+import { MdOutlineAssuredWorkload } from "react-icons/md";
 import {
     PiChatCircleTextDuotone,
     PiChatCircleTextFill,
@@ -64,6 +65,15 @@ export const NAVBAR_LINKS: NavbarLink[] = [
         textColor: "hover:text-blue-400",
         icons: {
             default: HiOutlineCodeBracketSquare,
+            active: HiCodeBracketSquare,
+        },
+    },
+    {
+        text: "Expriences",
+        href: "experiences",
+        textColor: "hover:text-blue-400",
+        icons: {
+            default: MdOutlineAssuredWorkload,
             active: HiCodeBracketSquare,
         },
     },

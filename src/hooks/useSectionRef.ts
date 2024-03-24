@@ -6,6 +6,7 @@ export type MainSectionTag =
     | "projects"
     | "about-me"
     | "skills"
+    | "experiences"
     | "contact";
 
 export type SectionTag = MainSectionTag | ProjectTag;
