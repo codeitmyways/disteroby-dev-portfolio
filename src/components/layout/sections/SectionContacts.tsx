@@ -4,22 +4,27 @@ import EarthContainer from "../../threejs/scenes/EarthContainer.tsx";
 import RoundInput from "../../UI/RoundInput/RoundInput.tsx";
 import SectionTitle from "../../UI/SectionTitle.tsx";
 import { BsSendCheckFill } from "react-icons/bs";
-import { MdMail } from "react-icons/md";
+import { MdMail, MdPerson } from "react-icons/md";
 import { RiSparkling2Line } from "react-icons/ri";
 import { TbMessageCircle2Filled } from "react-icons/tb";
 import { Bounce, toast, ToastContainer, ToastOptions } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import emailjs from "@emailjs/browser";
 
 export default function SectionContacts() {
+    const nameRef = useRef<HTMLInputElement>(null!);
     const emailRef = useRef<HTMLInputElement>(null!);
     const messageRef = useRef<HTMLInputElement>(null!);
 
     async function onSendMessage(e: FormEvent<HTMLFormElement>) {
         e.preventDefault();
 
+        const name = nameRef.current.value.trim();
         const email = emailRef.current.value.trim();
         const message = messageRef.current.value.trim();
-
+        console.log(import.meta.env.VITE_APP_EMAILJS_KEY)
+        console.log(import.meta.env.VITE_API_KEY)
+        //import.meta.env.VITE_API_KEY
         const toastOptions: ToastOptions = {
             position: "top-right",
             autoClose: 4000,
@@ -46,16 +51,34 @@ export default function SectionContacts() {
             draggable: false,
         });
 
-        const saveResult = await saveDbMessage(email, message);
-
+        emailjs.send(
+        import.meta.env.VITE_APP_SERVICE_ID,
+        import.meta.env.VITE_APP_TEMPLATE_ID,
+        {
+          from_name: name,
+          to_name: "Sumit",
+          from_email: email.trim().toLowerCase(),
+          to_email: import.meta.env.VITE_APP_EMAILJS_RECIEVER,
+          message: message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_KEY,
+      )
+      .then(() => toast.success("Thanks for contacting me."))
+      .catch((error) => {
+        // Error handle
+        console.log("[CONTACT_ERROR]: ", error);
+        toast.error("Something went wrong.");
+      })
+      .finally(() => {
         toast.update(id, {
             ...toastOptions,
-            render: saveResult
-                ? "Perfect! I'll reply shortly, thanks!🔥"
-                : "Whops... something went wrong! Please, retry later🙁",
-            type: saveResult ? "success" : "error",
+            render: "Perfect! I'll reply shortly, thanks!🔥",
+            type:  "success" ,
             isLoading: false,
         });
+      });
+
+       /**/
     }
 
     return (
@@ -78,6 +101,14 @@ export default function SectionContacts() {
                             Something Extraordinary{" "}
                             <RiSparkling2Line className='inline-block' />
                         </span>
+                        <RoundInput
+                            ref={nameRef}
+                            label='Your Name'
+                            icon={<MdPerson />}
+                            type='text'
+                            placeholder=''
+                            autocompleted='name'
+                        />
                         <RoundInput
                             ref={emailRef}
                             label='Your Email'
