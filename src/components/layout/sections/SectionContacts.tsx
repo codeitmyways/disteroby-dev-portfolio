@@ -22,9 +22,6 @@ export default function SectionContacts() {
         const name = nameRef.current.value.trim();
         const email = emailRef.current.value.trim();
         const message = messageRef.current.value.trim();
-        console.log(import.meta.env.VITE_APP_EMAILJS_KEY)
-        console.log(import.meta.env.VITE_API_KEY)
-        //import.meta.env.VITE_API_KEY
         const toastOptions: ToastOptions = {
             position: "top-right",
             autoClose: 4000,
