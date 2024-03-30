@@ -47,7 +47,6 @@ export default function SectionContacts() {
             closeOnClick: false,
             draggable: false,
         });
-        console.log(import.meta.env.VITE_APP_TEMPLATE_ID)
         emailjs.send(
         import.meta.env.VITE_APP_SERVICE_ID,
         import.meta.env.VITE_APP_TEMPLATE_ID,
