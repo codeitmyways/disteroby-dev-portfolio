@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 
 export default function SceneLoader() {
     const greetingsIntro = [
-        "Get ready, the digital journey is about to begin!",
-        "Hold tight, the web is weaving its magic!",
+        "One machine can do the work of 50 ordinary men. No machine can do the work of one extraordinary man. : Elbert Hubbard",
+        "Man is a slow, sloppy and brilliant thinker; the machine is fast, accurate and stupid. : William M. Kelly",
         "Patience, the cyber pathways are aligning for your entry!",
     ];
 
     return (
         <motion.div
+        
             style={{
                 scrollbarGutter: "stable both-edges",
             }}
