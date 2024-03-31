@@ -74,7 +74,7 @@ export const NAVBAR_LINKS: NavbarLink[] = [
         textColor: "hover:text-blue-400",
         icons: {
             default: MdOutlineAssuredWorkload,
-            active: HiCodeBracketSquare,
+            active: MdOutlineAssuredWorkload,
         },
     },
     {
