@@ -11,6 +11,14 @@ export default function Footer() {
                     Sumit Meena
                 </div>
             </div>
+            <div className='mx-auto flex flex-row flex-wrap items-center justify-center gap-2 text-center'>
+                <div className='shrink-0'>intelectual property of </div>
+                <div className='shrink-0 break-keep font-bold tracking-wide' >
+                    <a href='https://github.com/disteroby/disteroby-dev-portfolio'> 
+                    Roberto
+                    </a>
+                </div>
+            </div>
             <div className='mx-auto flex flex-row flex-wrap items-center justify-center gap-4 text-center'>
                 <a
                     className='text-3xl transition duration-500 hover:scale-110'
